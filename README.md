@@ -31,6 +31,17 @@ make
 ./main
 ```
 
+### Demo
+
+#### Input Example
+![Input Example](./media/input_demo.jpg)
+
+#### Output Encrypted
+![Output Encrypted](./media/output_demo.jpg)
+
+#### Output Decrypted
+![Output Decrypted](./media/output_demo2.jpg)
+
 ## Collaborators
 
 - [Juan Andrés Montoya](https://github.com/Jkn707)
