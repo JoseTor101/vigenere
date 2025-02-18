@@ -10,12 +10,25 @@ This project implements the Vigenere cipher for encrypting and decrypting text f
 
 ## Usage
 
+### Limitations
+
+The alphabet is limited to the following characters:
+```
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 ,!.¿?*+-/(){}[]=<>@#$%&:_;';
+```
+
 ### Compilation
 
 To compile the project, use the following command:
 
 ```sh
-g++ vigenere.cpp -o vigenere
+make
+```
+
+### Execution
+
+```sh
+./main
 ```
 
 ## Collaborators

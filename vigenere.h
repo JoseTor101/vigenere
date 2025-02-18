@@ -6,7 +6,7 @@
 #include <vector>
 using namespace std;
 
-const string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ,!.¿?";
+const string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 ,!.¿?*+-/(){}[]=<>@#$%&:_;'";
 const int ALPHABET_SIZE = ALPHABET.size();
 
 vector<vector<char>> generateVigenereMatrix(const string& alphabet, int size);
