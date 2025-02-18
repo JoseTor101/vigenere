@@ -11,6 +11,10 @@ int main(int argc, char* argv[]) {
     
     for (int i = 0; i < argc; ++i) {
         if (std::string(argv[i])=="-h" || std::string(argv[i])=="--help") {
+
+            std::cout << "-----------------------------------------------------------------" << std::endl;
+            std::cout << "This program is intended to work EXCLUSEVELY with text files" << std::endl;
+            std::cout << "-----------------------------------------------------------------" << std::endl;
             std::cout << "Usage: " << argv[0] << " [OPTION]... [FILE]... [KEY]" << std::endl;
             std::cout << "Encrypt or decrypt a file using the Vigenere cipher." << std::endl;
             std::cout << "Options:" << std::endl;
