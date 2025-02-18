@@ -53,7 +53,7 @@ char* Vigenere::decrypt(char *text) {
     char *decrypted = new char[text_size + 1];
     for (int i = 0; i < text_size; i++) {
         int key_index = i % key_size;
-        cout << "i: " << i << " KS: " << key_size << " KI:" << key_index << endl;
+        //cout << "i: " << i << " KS: " << key_size << " KI:" << key_index << endl;
         int text_index = strchr(alphabet, text[i]) - alphabet;
         int shift = strchr(alphabet, key[key_index]) - alphabet;
         decrypted[i] = alphabet[(text_index - shift + alphabet_size) % alphabet_size];
@@ -105,7 +105,8 @@ void Vigenere::decrypt_file(const char *filename) {
     char *text = read_file(filename);
     if (text) {
         char *decrypted = decrypt(text);
-        write_file(filename, decrypted);
+        string new_filename = string("decrypted_") + filename;
+        write_file(new_filename.c_str(), decrypted);
         delete[] text;
         delete[] decrypted;
     }
