@@ -110,14 +110,3 @@ void Vigenere::decrypt_file(const char *filename) {
         delete[] decrypted;
     }
 }
-
-int main() {
-    vector<vector<char>> vigenereMatrix = generateVigenereMatrix(ALPHABET, ALPHABET_SIZE);
-
-    char key[] = "KEY";
-    Vigenere vigenere(key);
-    //vigenere.encrypt_file("example.txt");
-    vigenere.decrypt_file("example.txt");
-
-    return 0;
-}
