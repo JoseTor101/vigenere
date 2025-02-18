@@ -2,6 +2,7 @@
 
 This project implements the Vigenere cipher for encrypting and decrypting text files using system calls in C++. The Vigenere cipher is a method of encrypting alphabetic text by using a simple form of polyalphabetic substitution.
 
+**This program is intended to work EXCLUSEVELY with text files**
 ## Files
 
 - `vigenere.h`: Header file containing the declarations of the Vigenere class and related functions.
